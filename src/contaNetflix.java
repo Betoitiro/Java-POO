@@ -1,6 +1,6 @@
 public class contaNetflix {
     
-    private String idiomaPreferencial;
+    String idiomaPreferencial;
     private String resolucaotela;
 
     public void entrar(){
