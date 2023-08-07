@@ -14,17 +14,27 @@ public class Conta {
     }
 
     public void setdepositar(double valor){
-        saldo = saldo + valor;
-        System.out.println();//quebra de linha
-        System.out.printf("teve um deposito no valor de R$" + valor);
-        System.out.println();//quebra de linha
-        System.out.printf("seu novo saldo é de R$" + saldo);
+        if(valor <= 0){
+            System.out.println("O valor desejado esta invalido!");
+        }else{
+            saldo = saldo + valor;
+            System.out.println();//quebra de linha
+            System.out.printf("teve um deposito no valor de R$" + valor);
+            System.out.println();//quebra de linha
+            System.out.printf("seu novo saldo é de R$" + saldo);
+            System.out.println();
+        }
     }
 
     public void setSacar(double saque){
-        saldo = saldo - saque;
-        System.out.println();//quebra de linha
-        System.out.println("Foi efetuado um saque no valor de R$" + saque);
-        System.out.println("Seu novo saldo é de R$" + saldo);
+        if(saque > saldo){
+            System.out.println("Saldo insuficiente!!");
+        }else{
+            saldo = saldo - saque;
+            System.out.println();//quebra de linha
+            System.out.println("Foi efetuado um saque no valor de R$" + saque);
+            System.out.println("Seu novo saldo é de R$" + saldo);
+        }
+        
     }
 }

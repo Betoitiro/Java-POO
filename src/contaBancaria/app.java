@@ -8,9 +8,9 @@ public class app {
         System.out.println();//quebra de linha 
 
 
-        conta.setdepositar(100.0); 
+        conta.setdepositar(10); 
         
-        conta.setSacar(200);
+        conta.setSacar(110);
     
     }
 }
