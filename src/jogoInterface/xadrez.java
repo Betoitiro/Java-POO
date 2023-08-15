@@ -5,10 +5,7 @@ public class xadrez implements jogo{
     int x = 0;
     int y = 0;
 
-    @Override
-    public void fechar() {
 
-    }
 
     @Override
     public void jogar() {
@@ -24,6 +21,12 @@ public class xadrez implements jogo{
             System.out.println("Avançando...");
             System.out.println("posição de x é " + x);
             System.out.println("posição de y é " + y);  
+            if(x == 20){
+                System.out.println("fim de jogo");
+                x =0;
+                System.out.println("posição de x é " + x);
+                System.out.println("posição de y é " + y);  
+            }
         }else if(direcao == "Voltar"){
             x--;
             System.out.println("Avançando...");
@@ -51,8 +54,15 @@ public class xadrez implements jogo{
             System.out.println("posição de x é " + x);
             System.out.println("posição de y é " + y); 
 
+        }else{
+            System.out.println("posição n encontrada...");
         }
 
+    }
+
+    @Override
+    public void fechar() {
+        System.out.println("Fim de jogo");
     }
 
     

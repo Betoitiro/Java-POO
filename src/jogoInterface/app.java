@@ -10,9 +10,11 @@ public class app {
         game.moverVert("Avançar");
         game.moverVert("Avançar");
         game.moverVert("Avançar");
-        game.moverVert("Voltar");
 
         game.Atacar("atacar Direita");
+
+        game.Atacar("atacar Esquerda");
+        game.Atacar("atacar Esquerda");
 
     }
 }
