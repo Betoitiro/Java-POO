@@ -10,7 +10,6 @@ package AULA1;
 
 
     public static void main(String[] args) {
-        
         //iphone 13, tela de 6,1, 256gb
         //GAlaxy S23, tela de 6,9, 256gb
         //xiomi mi 11 pro, tela de 6,81, 128gb
