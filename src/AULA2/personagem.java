@@ -9,9 +9,8 @@ public class personagem{
     int defesa;
 
     //void -> significa que não esta retornando
-    void mostrarStatus(){
+    public void mostrarStatus(){
         System.out.printf("%s (lvl %d), tem %s de forca e %s de defesa", nome, nivel, forca, defesa);
-
         //void para da retornos das informações;/ status do heroi
     }
 
@@ -34,7 +33,7 @@ public class personagem{
     void atacar(String alvo, String habilidade){
         int danoCausado = calcularDano(); //acrecentar as informações do metodo ao argumento
         if(habilidade.length()==0){
-            //possibilidade de por caracteristicas do ataque ou nãp
+            //possibilidade de por caracteristicas do ataque ou não
             System.out.printf("%s, atacou %s e causou  %s de dano", nome,alvo, danoCausado);
         } else{
             System.out.printf("%s, atacou %s, usando %s e causou e %s de dano", nome,alvo, habilidade, forca);

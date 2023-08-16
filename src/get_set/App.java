@@ -5,6 +5,7 @@ public class App {
     public static void main(String[] args) {
         pessoa p1 = new pessoa();
         
+        p1.getNome();
         p1.setNome("Beto");
         p1.setIdade(18);
         p1.setAltura(1.8);

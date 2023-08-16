@@ -4,17 +4,16 @@ public class app {
     public static void main(String[] args) {
         
         xadrez game = new xadrez();
+        
         game.jogar();
 
         game.moverVert("Avançar");
-        game.moverVert("Avançar");
-        game.moverVert("Avançar");
-        game.moverVert("Avançar");
+        game.Atacar("Direita");
+        game.Atacar("Esquerda");
 
-        game.Atacar("atacar Direita");
+        game.fechar();
 
-        game.Atacar("atacar Esquerda");
-        game.Atacar("atacar Esquerda");
+        
 
     }
 }
