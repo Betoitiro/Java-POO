@@ -1,6 +1,6 @@
 package jogoInterface;
 
-public class xadrez implements jogo{
+public class BatalhaNaval implements jogo{
 
     public int x = 0;
     public int y = 0;

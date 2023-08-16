@@ -3,7 +3,7 @@ package jogoInterface;
 public class app {
     public static void main(String[] args) {
         
-        xadrez game = new xadrez();
+        BatalhaNaval game = new BatalhaNaval();
         
         game.jogar();
 
