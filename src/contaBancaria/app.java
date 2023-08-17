@@ -2,15 +2,14 @@ package contaBancaria;
 
 public class app {
     public static void main(String[] args) {
-        Conta conta = new Conta();
-    
-        conta.Entrar();
-        System.out.println();//quebra de linha 
+        Conta c1 = new Conta("humberto", 1400, 74);
+        c1.Saldo();
 
+        Transferencias t1 = new Transferencias("humberto", 1400, 74);
+        t1.Tranferir("Beto", 700);
+        t1.Saldo();
 
-        conta.setdepositar(10); 
-        
-        conta.setSacar(110);
-    
+        Investimento i1 = new Investimento("Humberto", 1400, 74);
+        i1.Investir("MXRF11", 338)  ;
     }
 }

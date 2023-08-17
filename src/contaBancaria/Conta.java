@@ -1,19 +1,26 @@
 package contaBancaria;
 
-public class Conta {
+public class Conta{
     
-    private String nome = "Beto";
-    private double saldo = 100.0; //valor inicial 
+    private String nome;
+    protected double saldo;
+    private int id;
+
+    public Conta(String nome, double saldo, int id){
+        this.nome = nome;
+        this.saldo = saldo;
+        this.id = id;
+    }
 
     public void Entrar(){
-        System.out.printf("Seja bem vindo %s, seu saldo atual é de %s", nome, saldo);
+        System.out.printf("Seja bem vindo %s %s, seu saldo atual é de %s", nome,id, saldo);
     }
 
-    public double getsaldo(){
-        return saldo;
+    public void Saldo(){
+        System.out.println("Seu saldo atual é de " + saldo);
     }
 
-    public void setdepositar(double valor){
+    public void Depositar(double valor){
         if(valor <= 0){
             System.out.println("O valor desejado esta invalido!");
         }else{
@@ -26,7 +33,7 @@ public class Conta {
         }
     }
 
-    public void setSacar(double saque){
+    public void Saque(double saque){
         if(saque > saldo){
             System.out.println("Saldo insuficiente!!");
         }else{
@@ -35,6 +42,7 @@ public class Conta {
             System.out.println("Foi efetuado um saque no valor de R$" + saque);
             System.out.println("Seu novo saldo é de R$" + saldo);
         }
-        
     }
+
+    
 }

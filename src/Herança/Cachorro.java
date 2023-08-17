@@ -1,19 +1,11 @@
 package Herança;
 
-public class Cachorro {
-    private String nome;
-    //private
+public class Cachorro extends Animal {
+    public Cachorro(String nome) {
+        super(nome);
+        }
 
-    public void Comer(){
-        System.out.println("O cachorro comeu");
-    }
-    public void Beber(){
-        System.out.println("O cachorro bebeu");
-    }
-    public void latir(){
-        System.out.println("O cachorro latiu");
-    }
-    public void lamber(){
-        System.out.println("O cachorro lambeu");
+    public void correr(){
+        System.out.printf("O %s correu", getNome());
     }
 }

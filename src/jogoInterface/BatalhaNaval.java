@@ -1,6 +1,6 @@
 package jogoInterface;
 
-public class xadrez implements jogo{
+public class BatalhaNaval implements jogo{
 
     public int x = 0;
     public int y = 0;
@@ -18,7 +18,7 @@ public class xadrez implements jogo{
     public void moverVert(String direcao){
         //implementar while switch/ case com acressimo de break
         //switch case if break
-        if(direcao == "Avançar"){
+        if(direcao.equalsIgnoreCase("avançar")){
             x++;
             System.out.println("Avançando...");
             System.out.println("posição de x é " + x);
@@ -30,12 +30,16 @@ public class xadrez implements jogo{
                 System.out.println("posição de x é " + x);
                 System.out.println("posição de y é " + y);  
             }
-        }else if(direcao == "Voltar"){
+        }else if(direcao.equalsIgnoreCase("Voltar")){
             x--;
             //colocar condição de quando chegar a 0 o programa n ficar menor que 0
             System.out.println("Avançando...");
             System.out.println("posição de x é " + x);
             System.out.println("posição de y é " + y); 
+            if(x<=0){
+                x=0;
+                System.out.println("Não é possivel retorna!");
+            }
         }else{
             System.out.println("A posição de x");
         }
