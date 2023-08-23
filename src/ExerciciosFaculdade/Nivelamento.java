@@ -32,6 +32,7 @@ public class Nivelamento {
                 AltmediaH = AltmediaH / QuantidadeH;
             }
 
+            
             if (altura > maiorAltura) {
                 maiorAltura = altura;
             }
