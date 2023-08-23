@@ -1,6 +1,6 @@
 package Project1;
 
-public class Usuario  {
+public class Usuario {
     private String nome;
     private int agencia;
     protected double saldo;
@@ -8,11 +8,10 @@ public class Usuario  {
     protected double valor;
     protected double income;
     
-    public Usuario(String nome, int agencia, double saldo, double score, double valor, double income) {
+    public Usuario(String nome, int agencia, double saldo, double valor, double income) {
         this.nome = nome;
         this.agencia = agencia;
         this.saldo = saldo;
-        this.Score = score;
         this.valor = valor;
         this.income = income;
     }
