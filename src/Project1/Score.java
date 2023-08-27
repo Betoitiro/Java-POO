@@ -1,30 +1,31 @@
 package Project1;
 
+import java.util.Scanner;
+
 public class Score extends Usuario {
     int contador = 0;
     int score = 0;
 
-    public Score(String nome, int agencia, double saldo, double valor, double income) {
-        super(nome, agencia, saldo, valor, income);
+    public Score(String nome, int agencia, double balance, double value, double income) {
+        super(nome, agencia, balance);
         //TODO Auto-generated constructor stub
     }
 
     /**
      * 
      */
+    Scanner sc = new Scanner(System.in);
     public void score(){
-        for( int i =1; i<=1000; i++){
-            contador++;
-            if(i% 100==0){
-                score++;
-            }
-
-        }        
-        if(score >10){
-            
-            System.out.println("Seu Score corresponde com a oportunidade de emprestimo!");
+        System.out.println("Report your monthly income: ");
+        double income = sc.nextDouble();
+            double c = value - (value*30)/100;
+         // var c => 30% do salario
+            double y = c/12;
+         //var y =>
+        if(income > y){
+            System.out.println("Score approved!");
         }else{
-            System.out.println("Score indisponivel");
+            System.out.println("Score denied!");
         }
     }
     

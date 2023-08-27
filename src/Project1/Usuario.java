@@ -1,19 +1,17 @@
 package Project1;
 
 public class Usuario {
-    private String nome;
-    private int agencia;
-    protected double saldo;
+    protected static String nome;
+    public static int agencia;
+    protected static double balance;
     private double Score;
-    protected double valor;
-    protected double income;
+    protected static double value;
+    protected static double income;
     
-    public Usuario(String nome, int agencia, double saldo, double valor, double income) {
-        this.nome = nome;
-        this.agencia = agencia;
-        this.saldo = saldo;
-        this.valor = valor;
-        this.income = income;
+    public Usuario(String nome, int agencia, double balance) {
+        Usuario.nome = nome;
+        Usuario.agencia = agencia;
+        Usuario.balance = balance;
     }
 
     public String getNome() {
@@ -21,7 +19,7 @@ public class Usuario {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        Usuario.nome = nome;
     }
 
     public int getAgencia() {
@@ -29,15 +27,15 @@ public class Usuario {
     }
 
     public void setAgencia(int agencia) {
-        this.agencia = agencia;
+        Usuario.agencia = agencia;
     }
 
-    public double getSaldo() {
-        return saldo;
+    public double getbalance() {
+        return balance;
     }
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
+    public void setbalance(double balance) {
+        Usuario.balance = balance;
     }
 
     public double getScore() {
@@ -48,12 +46,12 @@ public class Usuario {
         Score = score;
     }
 
-    public double getValor() {
-        return valor;
+    public double getvalue() {
+        return value;
     }
 
-    public void setValor(double valor) {
-        this.valor = valor;
+    public void setvalue(double value) {
+        Usuario.value = value;
     }
 
     public double getincome() {
@@ -61,7 +59,7 @@ public class Usuario {
     }
 
     public void setincome(double income) {
-        this.income = income;
+        Usuario.income = income;
     }
 
     
