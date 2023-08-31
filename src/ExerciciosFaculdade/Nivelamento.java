@@ -13,7 +13,7 @@ public class Nivelamento {
         double menorAltura = Double.MAX_VALUE;
 
 
-        for( int i = 1; i <= 3; i++){
+        for( int i = 1; i <= 15; i++){
             System.out.println("Digite seu sexo (M/F)");
             String sexo = sc.nextLine().toUpperCase();
 
