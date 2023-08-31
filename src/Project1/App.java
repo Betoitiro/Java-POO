@@ -6,5 +6,10 @@ public class App {
         Usuario u = new Usuario("humberto", 227, 5000);
         Deposito d = new Deposito();
         d.Deposit();
+        Saque s = new Saque();
+        s.sacar();
+
+        
+
     }
 }
